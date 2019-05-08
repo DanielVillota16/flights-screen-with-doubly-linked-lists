@@ -277,7 +277,7 @@ public class FlightsScreenController {
     	long t1 = System.currentTimeMillis();
     	screen.sortByDate();
     	long t2 = System.currentTimeMillis();
-    	System.out.println(t2-t1);
+    	System.out.println("sorted by date\tused method: insertion sort\ttaken time: " + (t2-t1) + " milliseconds");
     	refreshTable();
     }
     
@@ -286,7 +286,7 @@ public class FlightsScreenController {
     	long t1 = System.currentTimeMillis();
     	screen.sortByAirline();
     	long t2 = System.currentTimeMillis();
-    	System.out.println(t2-t1);
+    	System.out.println("sorted by airline\tused method: bubble sort\ttaken time: " + (t2-t1) + " milliseconds");
     	refreshTable();
     }
 
@@ -295,7 +295,7 @@ public class FlightsScreenController {
     	long t1 = System.currentTimeMillis();
     	screen.sortByDestination();
     	long t2 = System.currentTimeMillis();
-    	System.out.println(t2-t1);
+    	System.out.println("sorted by destination\tused method: bubble sort\ttaken time: " + (t2-t1) + " milliseconds");
     	refreshTable();
     }
 
@@ -304,7 +304,7 @@ public class FlightsScreenController {
     	long t1 = System.currentTimeMillis();
     	screen.sortByCode();
     	long t2 = System.currentTimeMillis();
-    	System.out.println(t2-t1);
+    	System.out.println("sorted by code\tused method: selection sort\ttaken time: " + (t2-t1) + " milliseconds");
     	refreshTable();
     }
 
@@ -313,7 +313,7 @@ public class FlightsScreenController {
     	long t1 = System.currentTimeMillis();
     	screen.sortByGate();
     	long t2 = System.currentTimeMillis();
-    	System.out.println(t2-t1);
+    	System.out.println("sorted by gate\tused method: cocktail sort\ttaken time: " + (t2-t1) + " milliseconds");
     	refreshTable();
     }
 
@@ -322,7 +322,7 @@ public class FlightsScreenController {
     	long t1 = System.currentTimeMillis();
     	screen.sortByDepartureTime();
     	long t2 = System.currentTimeMillis();
-    	System.out.println(t2-t1);
+    	System.out.println("sorted by departure time\tused method: selection sort\ttaken time: " + (t2-t1) + " milliseconds");
     	refreshTable();
     }
 

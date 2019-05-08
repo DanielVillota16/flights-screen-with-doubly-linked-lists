@@ -74,8 +74,4 @@ public class Time implements Comparable<Time> {
 		return hour+":"+minutes+" "+dayTime;
 	}
 	
-	public boolean equals(Time time) {
-		return time.toString().equals(toString());
-	}
-	
 }

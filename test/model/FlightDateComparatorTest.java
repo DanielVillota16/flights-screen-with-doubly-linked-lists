@@ -15,7 +15,7 @@ class FlightDateComparatorTest {
 	}
 	
 	@Test
-	void testCompare() {
+	public void testCompare() {
 		setupScenary1();
 		Flight flight = new Flight(new Time(3,15,"AM"), new FlightDate(DATE_REFERENCE), 50, "Avianca", "Pereira", 5);
 		Flight flight2 = new Flight(new Time(3,15,"AM"), new FlightDate(DATE_REFERENCE + 50000000L), 50, "SATENA", "Pereira", 5);

@@ -21,14 +21,14 @@ class FlightDateTest {
 	}
 	
 	@Test
-	void testFlightDate() {
+	public void testFlightDate() {
 		setupScenary1();
 		FlightDate fd = new FlightDate(DATE_REFERENCE);
 		assertTrue(fd.getDateMillis() == DATE_REFERENCE);
 	}
 	
 	@Test
-	void testToString() {
+	public void testToString() {
 		setupScenary2();
 		Date d = new Date(DATE_REFERENCE);
 		String[] date = d.toString().split(" ");
@@ -37,7 +37,7 @@ class FlightDateTest {
 	}
 	
 	@Test
-	void testEquals() {
+	public void testEquals() {
 		setupScenary2();
 		FlightDate d = new FlightDate(DATE_REFERENCE);
 		assertTrue(flightDate.equals(d), "The equals method is doing a wrong comparison");
